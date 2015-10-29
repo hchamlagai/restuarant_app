@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Menues</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Appitizer</th>
+      <th>Entres</th>
+      <th>Desserts</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @menues.each do |menue| %>
+      <tr>
+        <td><%= menue.appitizer %></td>
+        <td><%= menue.entres %></td>
+        <td><%= menue.desserts %></td>
+        <td><%= link_to 'Show', menue %></td>
+        <td><%= link_to 'Edit', edit_menue_path(menue) %></td>
+        <td><%= link_to 'Destroy', menue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Menue', new_menue_path %>

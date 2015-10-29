@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  appitizer: MyString
+  entres: MyString
+  desserts: MyString
+
+two:
+  appitizer: MyString
+  entres: MyString
+  desserts: MyString

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Appitizer:</strong>
+  <%= @menue.appitizer %>
+</p>
+
+<p>
+  <strong>Entres:</strong>
+  <%= @menue.entres %>
+</p>
+
+<p>
+  <strong>Desserts:</strong>
+  <%= @menue.desserts %>
+</p>
+
+<%= link_to 'Edit', edit_menue_path(@menue) %> |
+<%= link_to 'Back', menues_path %>
